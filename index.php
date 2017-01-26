@@ -1,5 +1,6 @@
 <?php
-require_once ('/your/path/to/applepay_includes/apple_pay_conf.php');
+$_SERVER["HTTP_HOST"] = "qaform.devspace.net";
+require_once (__DIR__ .'/apple_pay_conf.php');
 ?>
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -29,7 +30,7 @@ require_once ('/your/path/to/applepay_includes/apple_pay_conf.php');
 <button type="button" id="applePay"></button>
 <p style="display:none" id="got_notactive">ApplePay is possible on this browser, but not currently activated.</p>
 <p style="display:none" id="notgot">ApplePay is not available on this browser</p>
-<p style="display:none" id="success">Test transaction completed, thanks. <a href="<?=$_SERVER["SCRIPT_URL"]?>">reset</a></p>
+<p style="display:none" id="success">Test transaction completed, thanks. </p>
 </div>
 <script type="text/javascript">
 

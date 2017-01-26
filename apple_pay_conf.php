@@ -1,7 +1,7 @@
 <?php
 // update these with the real location of your two .pem files. keep them above/outside your webroot folder
-define('PRODUCTION_CERTIFICATE_KEY', __DIR__ . 'ApplePay.key.pem');
-define('PRODUCTION_CERTIFICATE_PATH', __DIR__ . 'ApplePay.crt.pem');
+define('PRODUCTION_CERTIFICATE_KEY', __DIR__ . '/ApplePay.key.pem');
+define('PRODUCTION_CERTIFICATE_PATH', __DIR__ . '/ApplePay.crt.pem');
 
 // This is the password you were asked to create in terminal when you extracted ApplePay.key.pem
 define('PRODUCTION_CERTIFICATE_KEY_PASS', 'password'); 
